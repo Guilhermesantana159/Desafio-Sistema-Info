@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Style.css" rel="stylesheet" />
+    <script src="~/Scripts/Person.js"></script>
+    <title>CRUD</title>
+</head>
+<body>
+    <nav id="navbar">
+        <ul id="list_navbar">
+            <li id="icon">@Html.ActionLink("CRUD", "Register", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
+            <li>|</li>
+            <li>@Html.ActionLink("Registro", "Register", "Home")</li>
+            <li>@Html.ActionLink("Sair", "Exit", "Exit")</li>
+        </ul>
+    </nav>
+    <div id="pages_body">
+        @RenderBody()
+    </div>
+    <div id="footer">
+        <span>&copy; @DateTime.Now.Year Application CRUD | Designed Guilherme Santana</span>
+    </div>
+</body>
+</html>

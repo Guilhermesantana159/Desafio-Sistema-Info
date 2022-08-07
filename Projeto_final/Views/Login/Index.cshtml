@@ -1,0 +1,15 @@
+﻿<div id="form">
+    <form action="/Login/CheckLogin" method="post" id="form_login">
+        <div id="user">
+            <span id="title_form">Login</span>
+            <input type="text" name="Usuario" id="Usuario" placeholder="&#9993 | Usuário" />
+        </div>
+        <div id="password">
+            <input type="password" name="Senha" id="Senha" placeholder="&#128273 | Senha" />
+        </div>
+        <p id="Text_Error">
+            @ViewBag.Erro
+        </p>
+        <button type="submit" id="login" class="btn">Login in</button>
+    </form>
+</div> 

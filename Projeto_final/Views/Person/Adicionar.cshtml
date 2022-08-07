@@ -1,0 +1,20 @@
+﻿<div id="form">
+    <form action="/Person/Register" method="post" id="form_add_alt_del">
+        <div>
+            <input type="text" id="codigo" name="codigo" maxlength="5" placeholder="&#127380 | Codigo" />
+        </div>
+        <div>
+            <input type="text" id="nome" name="nome" maxlength="25" required placeholder="&#128100 | Nome" />
+        </div>
+        <div>
+            <input type="text" id="cpf" name="cpf" maxlength="11" required placeholder="&#128278 | CPF" />
+        </div>
+        <div>
+            <input type="text" id="endereço" name="endereço" maxlength="35" placeholder="&#128237 | Endereço" />
+        </div>
+        <div>
+            <input type="text" id="telefone" name="telefone" maxlength="9" placeholder="&#128222 | Telefone" />
+        </div>
+        <button id="btn_add" class="btn" onclick="person_add()">Salvar</button>
+    </form>
+</div>

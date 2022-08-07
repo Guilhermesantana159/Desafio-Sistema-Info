@@ -1,0 +1,31 @@
+﻿<div id="table">
+    <span id="title_table">Registro de Pessoas</span>
+    <p><a id="btn_add_register" href="/Person/Adicionar">Adicionar</a></p>
+    <br />
+    <table id="table_person">
+        <tr>
+            <th>Codigo</th>
+            <th>Nome</th>
+            <th>Cpf</th>
+            <th>Endereço</th>
+            <th>Telefone</th>
+            <th>Modificar</th>
+            <th>Excluir</th>
+        </tr>
+        @foreach (var item in ViewBag.Lista)
+        {
+            <tr>
+                <td>@item.Codigo</td>
+                <td>@item.Nome</td>
+                <td>@item.Cpf</td>
+                <td>@item.Endereço</td>
+                <td>@item.Telefone</td>
+                <td><a href="/Person/Alterar/@item.Id" id="Alt">Alterar</a></td>
+                <td><a href="/Person/Delete/@item.Id" id="Del">Deletar</a></td>
+
+            </tr>
+
+        }
+    </table>
+</div>
+

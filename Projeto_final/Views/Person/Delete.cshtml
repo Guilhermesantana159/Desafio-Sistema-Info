@@ -1,0 +1,24 @@
+﻿@{
+    var person = ViewBag.person;
+}
+<div id="form">
+    <form action="/Person/Delete" method="post" id="form_add_alt_del">
+        <div>
+            <input type="hidden" id="id" name="id" value="@person.Id" />
+            <input type="text" readonly id="codigo" name="codigo" placeholder="&#127380 | Codigo" value="@person.Codigo" />
+        </div>
+        <div>
+            <input type="text" readonly id="nome" name="nome" required placeholder="&#128100 | Nome" value="@person.Nome" />
+        </div>
+        <div>
+            <input type="text" readonly id="cpf" name="cpf" required placeholder="&#128278 | CPF" value="@person.Cpf" />
+        </div>
+        <div>
+            <input type="text" readonly id="endereço" name="endereço" placeholder="&#128237 | Endereço" value="@person.Endereço" />
+        </div>
+        <div>
+            <input type="text" readonly id="telefone" name="telefone" placeholder="&#128222 | Telefone" value="@person.Telefone" />
+        </div>
+        <button id="btn_del" class="btn">Excluir</button>
+    </form>
+</div>
